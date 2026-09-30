@@ -1,0 +1,109 @@
+.carrinho-itens {
+    padding: 2rem;
+    max-height: 50vh; /* Limita a altura máxima a 50% da tela */
+    overflow-y: auto; /* Adiciona barra de rolagem apenas quando necessário */
+}
+
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.carrinho-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.carrinho-item-detalhes {
+    flex: 1;
+}
+
+.carrinho-item-detalhes h3 {
+    margin: 0;
+}
+
+.carrinho-item-detalhes p {
+    margin: 0.5rem 0;
+}
+
+.carrinho-item button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrinho-item button:hover {
+    background-color: #cc0000;
+}
+
+.carrinho-total {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.formulario-pagamento {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+.formulario-pagamento h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-pagamento .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.formulario-pagamento label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.formulario-pagamento input,
+.formulario-pagamento select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.formulario-pagamento input:focus,
+.formulario-pagamento select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+body {
+    padding-bottom: 80px; /* Ajuste este valor de acordo com a altura do seu rodapé */
+}
