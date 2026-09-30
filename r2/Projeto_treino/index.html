@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programação para Web I</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <header>
-        <h1>Programação para web I</h1>
-        <nav>
-            <button>Abrir/fechar Menu</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Programação para Web I</a></li>
-                <li><a href="tematicas.html">Temáticas</a></li>
-                <li><a href="contatos.html">Contato</a></li>
+    <header class="cabecalho">
+        <h1 class="logo">Programação para web I</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/fechar Menu</button>
+            <ul class="menu-principal__lista">
+                <li class="menu-principal__item menu-principal__item--atual"><a href="index.html">Home</a></li>
+                <li class="menu-principal__item menu-principal__item--atual"><a href="sobre.html">Sobre Programação para Web I</a></li>
+                <li class="menu-principal__item menu-principal__item--atual"><a href="tematicas.html">Temáticas</a></li>
+                <li class="menu-principal__item menu-principal__item--atual"><a href="contatos.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -53,22 +55,24 @@
             </section>
         </section><!-- Fim da seção de depoimentos dos alunos -->
     </main>
-    <footer>
-        <div>
-            <div>
+    
+    <footer class="rodape">
+        
+        <div class="rodape__linha-1">
+            <div class="rodape_coluna">
                 <a href="index.html">Programação para Web I</a>
                 <p>O objetivo geral do curso é proporcionar ao estudante uma introdução às linguagens e tecnologias fundamentais da web (frontend): HTML, CSS, JavaScript, HTTP e o browser.</p>
             </div>
-            <div>
-                <h2>Informações Gerais</h2>
-                <ul>
-                    <li><a href="https://www.computacao.ufcg.edu.br/unidade-acad%C3%AAmica">Unidade Acadêmica de Sistemas e Computação</a></li>
-                    <li><a href="https://www.computacao.ufcg.edu.br/graduacao">Graduação</a></li>
-                    <li><a href="https://www.computacao.ufcg.edu.br/mestrado-e-doutorado">Pós-Graduação</a></li>
-                    <li><a href="https://www.computacao.ufcg.edu.br/servi%C3%A7os">Serviços</a></li>
+            <div class="rodape_coluna">
+                <h2 class="rodape__titulo">Informações Gerais</h2>
+                <ul class="rodape__lista-links">
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/unidade-acad%C3%AAmica">Unidade Acadêmica de Sistemas e Computação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/graduacao">Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/mestrado-e-doutorado">Pós-Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/servi%C3%A7os">Serviços</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="rodape_coluna">
                 <h2>Links</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -78,7 +82,8 @@
                 </ul>
             </div>
         </div>
-        <div>
+
+        <div class="rodape__linha-2">
             <p>Todos os direitos reservados PW.</p>
         </div>
     </footer>
