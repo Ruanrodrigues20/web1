@@ -1,0 +1,38 @@
+.cartao {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.cartao__nome {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.cartao__profissao {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.cartao__botao {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cartao__botao--principal {
+  background-color: #1976d2;
+  color: white;
+}
+
+.cartao__botao--secundario {
+  background-color: #f1f1f1;
+  color: #333;
+}
