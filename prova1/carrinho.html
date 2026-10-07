@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/styleCarrinho.css"/>
+</head>
+<body>
+    <header>
+        <h1>Prova da Loja de Informática</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="carrinho">
+            <span id="carrinho__contagem">0</span>
+            <img src="./img/cart-icon.png" alt="Carrinho de Compras">
+        </div>
+    </header>
+    <main>
+        <section class="carrinho-itens">
+            <h2>Seu Carrinho</h2>
+            <div id="carrinho-itens__carrinho-container">
+                <!-- Itens do carrinho serão exibidos aqui -->
+            </div>
+            <div class="carrinho-itens__carrinho-total">
+                <h3>Total: <span id="carrinho-itens__carrinho-total__carrinho-total">0,00</span></h3>
+            </div>
+            <button onclick="limpaCarrinho()">Limpar Carrinho</button>
+        </section>
+        <form class="form-pagamento">
+            <h1>Pagamento</h1>
+            <div class="form-pagamento__campo">
+                <label for="bandeira-cartao">Bandeira</label>
+                <select name="bandeira-cartao" id="bandeira-cartao">
+                    <option value="" disabled selected hidden></option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                </select>
+            </div>
+            
+            <div class="form-pagamento__campo">
+                <label for="nome-titular">Nome do titular</label>
+                <input name="nome-titular" type="text" placeholder="Digite aqui..."/>
+            </div>
+
+            <div class="form-pagamento__campo">
+                <label for="num-cartao">Número do cartão</label>
+                <input name="num-cartao" type="text" placeholder="Digite aqui..."/>
+            </div>
+            
+            <div class="form-pagamento__campo">
+                <label for="data-validade">Data de validade</label>
+                <input name="data-validade" type="date" placeholder="Digite aqui..."/>
+            </div>
+                        
+            <div class="form-pagamento__campo">
+                <label for="digito-verificador">Digito verificador</label>
+                <input name="digito-verificador" placeholder="Digite aqui..." type="password"/>
+            </div>
+
+            <button class="form-pagamento__button">Pagar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja de Informática - Todos os direitos reservados</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

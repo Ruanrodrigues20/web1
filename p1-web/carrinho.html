@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleCarrinho.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Prova da Loja de Informática</h1>
+        <nav class="cabecalho__nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="cabecalho__carrinho">
+            <span id="carrinho-contagem">0</span>
+            <img src="img/cart-icon.png" alt="Carrinho de Compras">
+        </div>
+    </header>
+    <main>
+        <section class="carrinho">
+            <h2 class="carrinho__titulo">Seu Carrinho</h2>
+            <div class="carrinho__itens" id="carrinho-container">
+                <!-- Itens do carrinho serão exibidos aqui -->
+            </div>
+            <div class="carrinho__total">
+                <h3>Total: <span id="carrinho-total">0,00</span></h3>
+            </div>
+            <button onclick="limpaCarrinho()">Limpar Carrinho</button>
+        </section>
+        <section class="pagamento">
+            <h2 class="pagamento__titulo">Dados Pagamento</h2>
+            <div class="pagamento__container">
+                <form id="form-pagamento" action="#" method="POST">
+                    <!-- 1. Bandeira do cartão -->
+                    <div class="pagamento__campo">
+                        <label for="bandeira">Bandeira do Cartão:</label>
+                        <select id="bandeira" name="bandeira" required>
+                            <option value="" disabled selected>Selecione a bandeira</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="elo">Elo</option>
+                            <option value="amex">American Express</option>
+                            <option value="hipercard">Hipercard</option>
+                        </select>
+                    </div>
+                    <!-- 2. Nome do titular -->
+                    <div class="pagamento__campo">
+                        <label for="nome-titular">Nome do Titular:</label>
+                        <input type="text" id="nome-titular" name="nome-titular" placeholder="Nome como impresso no cartão" required>
+                    </div>
+                    <!-- 3. Número do cartão -->
+                    <div class="pagamento__campo">
+                        <label for="numero-cartao">Número do Cartão:</label>
+                        <input type="text" id="numero-cartao" name="numero-cartao" maxlength="19" placeholder="0000 0000 0000 0000" required>
+                    </div>
+                    <!-- 4. Data de validade -->
+                    <div class="pagamento__campo">
+                        <label for="validade-cartao">Data de Validade:</label>
+                        <input type="month" id="validade-cartao" name="validade-cartao" required>
+                    </div>
+                    <!-- 5. Dígito verificador protegido como senha -->
+                    <div class="pagamento__campo">
+                        <label for="cvv">Dígito Verificador (CVV):</label>
+                        <input type="password" id="cvv" name="cvv" maxlength="4" placeholder="***" required>
+                    </div>
+                    <button type="submit">Finalizar Compra</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja de Informática - Todos os direitos reservados</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.carrinho-itens {
+    padding: 2rem;
+}
+
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.carrinho-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.carrinho-item-detalhes {
+    flex: 1;
+}
+
+.carrinho-item-detalhes h3 {
+    margin: 0;
+}
+
+.carrinho-item-detalhes p {
+    margin: 0.5rem 0;
+}
+
+.carrinho-item button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrinho-item button:hover {
+    background-color: #cc0000;
+}
+
+.carrinho-itens__carrinho-total {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-pagamento {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.form-pagamento__campo {
+    margin-bottom: 1%;
+}
+
+.form-pagamento__campo label {
+    font-weight: bold;
+}
+
+.form-pagamento__button {
+    width: 200px;
+    border-radius: 10px;
+}
